@@ -127,8 +127,8 @@ border-radius:10px;
             flex-direction: row;
             align-items: center;
             justify-content:center;
-            padding:0px;
-            padding-left:0px;
+            /* padding:3px; */
+            padding-left:7px;
             margin-left:0px;
             margin-top:10px;
             /* background-color:red; */
@@ -146,4 +146,30 @@ border-radius:10px;
         }
 
     }
+
+    @media(max-width: 590px) {
+            .textExperience {
+                font-size:90%;
+            }
+
+            .nameCompany {
+                width:70%;
+            }
+            .borderExperience{
+                width:87%;
+            }
+        }
+
+        @media(max-width: 459px) {
+            .textExperience {
+                font-size:85%;
+            }
+
+            .nameCompany {
+                width:75%;
+            }
+            .borderExperience{
+                width:90%;
+            }
+        }
 `

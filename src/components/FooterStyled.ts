@@ -50,4 +50,40 @@ export const StyledFooter = styled.footer`
         transform: scale(1.5);
     }
 
+    @media(max-width: 481px) {
+
+      .contactInfos p {
+         font-size: 110%;
+       }
+       .whatsapp a p{
+          font-size: 400%;
+       } 
+
+      .paragrafo {
+        display: none;
+      }
+    }
+
+    @media(max-width: 438px) {
+
+      .contactInfos p {
+          font-size: 100%;
+        }
+      .whatsapp a p{
+          font-size: 300%;
+        }
+    
+    }
+
+    @media(max-width: 334px) {
+
+      .contactInfos p {
+        font-size: 90%;
+        }
+      .whatsapp a p{
+        font-size: 250%;
+        }
+ 
+}
+
 `

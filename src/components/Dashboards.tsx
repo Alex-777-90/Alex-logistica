@@ -6,8 +6,8 @@ import {FaAngleLeft ,FaAngleRight} from "react-icons/fa"
 
 
 const Dashboards  = () => {
-  
-    const [data,setData] =useState<any>([])
+
+    const [data, setData] = useState<any>([]);
     const carousel = useRef<any>(null);
 
     useEffect(() => {
@@ -17,7 +17,8 @@ const Dashboards  = () => {
       
     },[])
 
-    const handleLeftClick = (e:MouseEvent<HTMLButtonElement>) => {
+    
+      const handleLeftClick = (e:MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         carousel.current.scrollLeft -= carousel.current.offsetWidth;
        
@@ -32,37 +33,34 @@ const Dashboards  = () => {
       };
 
     if (!data || !data.length) return null;
-
-
+     
+      console.log(data)
 
     return (
         <StyledDashboard>
-            <div className="buttons" >
+            <div className="buttons1" >
                 <button onClick={handleLeftClick} >
                     <FaAngleLeft/>
                 </button>
             </div>
-            <div className="carousel" ref={carousel} >
-                {data.map((item:any) =>{
+           
+            <div className="slide" ref={carousel}>
+                {data.map((item:any,index:any) =>{
                     const {id,nameDashboard,description,dashboardVideo} = item
                     const pathVideos = `http://localhost:3000/videos/${dashboardVideo}`
-                    console.log( pathVideos)
-                return(
-                    
-                    <div className="item" key={id} >
-                        <div>
+
+                    return(
+                        <div className="card"  key={id}>
                             <p>{nameDashboard}</p>
+                              <video controls muted autoPlay loop id={`video-${index}`}>
+                                  <source src={ pathVideos }/>
+                              </video>
                         </div>
-                        <div className='video'>
-                            <video controls muted autoPlay loop >
-                                <source src={ pathVideos }/>
-                            </video>
-                        </div>
-                    </div>
-                    );
-                })}
-            </div> 
-            <div className="buttons">
+                    )
+                })} 
+            </div>
+
+            <div className="buttons2">
                 <button onClick={handleRightClick} >
                     <FaAngleRight/>
                 </button>

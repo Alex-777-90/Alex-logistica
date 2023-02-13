@@ -121,4 +121,15 @@ export const StyledAbout = styled.div`
         }
      }
 
+     @media(max-width: 600px) {
+        .textAbout p {
+           font-size:90%;
+        }
+        .textAbout{
+            width: 100%;
+            padding-left:20px;
+            padding-right:20px;
+        }
+     }
+
 `

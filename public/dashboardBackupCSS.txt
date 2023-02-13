@@ -1,0 +1,139 @@
+import styled from "styled-components";
+
+export const StyledDashboard = styled.div`
+
+background-color: rgba(5, 86, 153, 0.774);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:40px;
+padding-bottom:30px;
+border-radius:10px;
+padding-top:20px;
+
+
+.titleCarousel h2{
+   color:white;
+}
+
+.carousel{
+   /* background-color:red; */
+   width:71%;
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+ 
+.item{
+   /* background-color:lightblue; */
+   /* width:2900px */
+   margin:4px;
+   /* padding:5px; */
+   border-radius:10px;
+   flex: none;
+   /* width: 100%; */
+
+   
+   
+}
+
+.item p {
+   color: white;
+   padding: 15px;
+   text-align:center;
+   font-size:120%;
+}
+
+.video {
+   /* background-color:green; */
+   /* width:300px; */
+   /* width: 100%; */
+ 
+}
+
+video{
+   width: 870px;
+   height:480px;
+   /* width:10px; */
+   object-fit:cover;
+   border-radius:10px;
+   /* background-color:pink; */
+}
+
+button {
+   cursor: pointer;
+   font-size:217%;
+   color:blue;
+   background-color: transparent;
+   border:none;
+   margin-top:65px;
+}
+
+@media(max-width: 1070px) {
+
+}
+
+`
+
+segundo slider 
+====================================================================================================================================================================================
+
+import styled from "styled-components";
+
+export const StyledDashboard = styled.section`
+
+background-color: rgba(5, 86, 153, 0.774);
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:40px;
+padding-bottom:30px;
+border-radius:10px;
+padding-top:20px;
+
+
+.slide {
+   /* padding: 2vh 0 2vh 5vw; */
+   display: flex;
+   width: 70vw;
+   margin: auto;
+   justify-content: space-between;
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+   background-color:green;
+}
+
+.slide::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  margin-right: 90px;
+}
+
+.card video {
+  width: 850px;
+  object-fit:cover;
+}
+
+.buttons{
+   background-color:pink;
+}
+
+button {
+   cursor: pointer;
+   font-size:217%;
+   color:blue;
+   background-color: transparent;
+   border:none;
+   margin-top:65px;
+}
+
+
+
+`
+

@@ -14,7 +14,7 @@ const Footer = () => {
                           alxnvn@yahoo.com.br</p>
                   </div>
                   <div className="whatsapp">
-                      <p>Clique Aqui</p>
+                      <p className="paragrafo">Clique Aqui</p>
                       <a target="_blank"
                           href="https://api.whatsapp.com/send?phone=5511966471937">
                           <p><FaWhatsappSquare/></p>
