@@ -1,0 +1,75 @@
+import {StyledDashboard} from "./DashboardsStyled";
+import DataBase from "../data/Dashboards.json";
+import {useEffect ,useState , FormEvent ,MouseEvent,useRef} from "react";
+import {FaAngleLeft ,FaAngleRight} from "react-icons/fa"
+
+
+
+const Dashboards  = () => {
+  
+    const [data,setData] =useState<any>([])
+    const carousel = useRef<any>(null);
+
+    useEffect(() => {
+
+        const videojson = DataBase
+        setData(videojson)
+      
+    },[])
+
+    const handleLeftClick = (e:MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        carousel.current.scrollLeft -= carousel.current.offsetWidth;
+       
+      };
+    
+      const handleRightClick = (e:MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
+        console.log(carousel.current)
+
+      };
+
+    if (!data || !data.length) return null;
+
+
+
+    return (
+        <StyledDashboard>
+            <div className="buttons" >
+                <button onClick={handleLeftClick} >
+                    <FaAngleLeft/>
+                </button>
+            </div>
+            <div className="carousel" ref={carousel} >
+                {data.map((item:any) =>{
+                    const {id,nameDashboard,description,dashboardVideo} = item
+                    const pathVideos = `http://localhost:3000/videos/${dashboardVideo}`
+                    console.log( pathVideos)
+                return(
+                    
+                    <div className="item" key={id} >
+                        <div>
+                            <p>{nameDashboard}</p>
+                        </div>
+                        <div className='video'>
+                            <video controls muted autoPlay loop >
+                                <source src={ pathVideos }/>
+                            </video>
+                        </div>
+                    </div>
+                    );
+                })}
+            </div> 
+            <div className="buttons">
+                <button onClick={handleRightClick} >
+                    <FaAngleRight/>
+                </button>
+            </div>
+        </StyledDashboard>
+    );
+}
+
+export default Dashboards;
+

@@ -1,0 +1,55 @@
+<div className="nameCompany " >
+                    {data.map((item:any) => {
+
+                        const pathImage = `http://localhost:3000/image/${item.companyImage}`
+                        // console.log(pathImage)
+
+                        return (
+                            <img src={pathImage} alt={item.companyImage} key={item.id} onClick={hamdleClick} />
+                        )
+                    })}
+                </div>
+                <div className="textExperience">
+                     <h3>POP Trade Marketing</h3>
+                     <p><strong>Cargo:</strong> Analista de Logística</p>
+                     <p><strong>Periodo:</strong> set de 2021 - mai de 2022</p>
+                     <p><strong>Descrição:</strong></p>
+                     <p>Fazia a gestão de todos os ativos da empresa, 
+                        logística de EPI’s e aparelhos corporativos , 
+                        frota Para tal utilizava de ferramentas de dados como excel Dashboards,
+                        Power BI, Power query e MYSQL. Auxiliava na gestão de um grupo de 7 colaboradores, 
+                        onde administrava o fluxo de tarefa diária para cada um e o atingir das metas em tempo hábil."</p>
+                     <p><strong>Competências:</strong></p>
+                     <p>Gestão de equipes · Microsoft Power BI · Gestão logística · Análise de dados · Microsoft Excel</p>
+                </div> 
+
+===================================================================================================================================================================================
+{data.map((item:any) => {  
+
+                    const pathImage = `http://localhost:3000/image/${item.companyImage}`
+                    // console.log(pathImage)
+                    console.log(logo)
+                    return(
+                        <>
+                            <div className="nameCompany " >
+                            <input 
+                               id="brandLogo" 
+                               type="checkbox" 
+                               value={pathImage}
+                            />
+                                <label htmlFor="brandLogo">
+                                    <img src={pathImage} alt={item.companyImage}   />
+                                </label>       
+                            </div>
+                            <div className="textExperience" >
+                                <h3>{item.company}</h3>
+                                <p><strong>Cargo:</strong> {item.job}</p>
+                                <p><strong>Periodo:</strong> {item.time}</p>
+                                <p><strong>Descrição:</strong></p>
+                                <p>{item.description}</p>
+                                <p><strong>Competências:</strong></p>
+                                <p>{item.Skills}</p>
+                            </div>
+                        </>
+                    )
+                })}

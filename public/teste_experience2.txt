@@ -1,0 +1,46 @@
+{data.map((item:any) => {
+
+                    
+                     if(index == 2) {
+                        return(
+
+                            <div className="textExperience" key={data[2].id} >
+                                <h3>{data[2].company}</h3>
+                                <p><strong>Cargo:</strong> {data[2].job}</p>
+                                <p><strong>Periodo:</strong> {data[2].time}</p>
+                                <p><strong>Descrição:</strong></p>
+                                <p>{data[2].description}</p>
+                                <p><strong>Competências:</strong></p>
+                                <p>{data[2].Skills}</p>
+                            </div>
+                        )
+                    }
+                    if(index == "") {
+                        return(
+
+                            <div className="textExperience" key={data[0].id} >
+                                <h3>{data[0].company}</h3>
+                                <p><strong>Cargo:</strong> {data[0].job}</p>
+                                <p><strong>Periodo:</strong> {data[0].time}</p>
+                                <p><strong>Descrição:</strong></p>
+                                <p>{data[0].description}</p>
+                                <p><strong>Competências:</strong></p>
+                                <p>{data[0].Skills}</p>
+                            </div>
+                        )
+                    }
+                    if(index == 1) {
+                        return(
+
+                            <div className="textExperience" key={data[1].id} >
+                                <h3>{data[1].company}</h3>
+                                <p><strong>Cargo:</strong> {data[1].job}</p>
+                                <p><strong>Periodo:</strong> {data[1].time}</p>
+                                <p><strong>Descrição:</strong></p>
+                                <p>{data[1].description}</p>
+                                <p><strong>Competências:</strong></p>
+                                <p>{data[1].Skills}</p>
+                            </div>
+                        )
+                    }
+                })}

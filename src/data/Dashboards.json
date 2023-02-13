@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "nameDashboard": "Controle de Frota e multas",
+        "description":"Este Dashboard controla toda frota desde ativos fixos e alugados e controle de multas dos funcionários",
+        "dashboardVideo":"dashboardFrotas.mp4"
+    },
+
+    {   "id":2,
+        "nameDashboard": "Controle de movimentações onboarding e offboarding",
+        "description":"Este Dashboard controla entrega de devolução de celulares ,chip's de funcionários admitidos de demitidos",
+        "dashboardVideo":"dashboardMovimentacao.mp4"
+    },
+
+    {
+        "id":3,
+        "nameDashboard": "Controle de aparelhos em manutenção",
+        "description":"Este de Dashboard controla todos os celulares que estão em manutenção ou tem chamado aberto sem solução ",
+        "dashboardVideo":"dashboardManutencao.mp4"
+    }
+
+   
+]
+
