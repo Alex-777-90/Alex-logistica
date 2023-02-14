@@ -1,26 +1,33 @@
-
 import {StyledExperience} from "./ExperienceStyled";
 import DataBaseExperience from "../data/Experience.json";
-import {useEffect ,useState ,MouseEvent} from "react";
+import {useEffect ,useState,MouseEvent} from "react";
+import POPtrade from "../image/pop-trade-marketing.png"
+import tecnoset from "../image/tecnoset.png"
+import globalHitss from "../image/globalhitss.jpg"
 
 
 const Experience = () => {
 
     const [data,setData] =useState<any>([])
-    const [index, setIndex] = useState<any>();
+    const [index, setIndex] = useState<number>();
     const [isHidden, setIsHidden] = useState<boolean>(true);
 
+    
 
     useEffect(() => {
-        
         const Experiencejson = DataBaseExperience
         setData(Experiencejson)
-      
-         
     },[])
 
-    console.log(index)
-    
+
+    const handleclick = (event:MouseEvent) => {
+        event.preventDefault();
+        const idImage = parseInt((event.target as HTMLImageElement).id)
+        setIndex(idImage)
+        setIsHidden(false)
+       
+    }
+
 
     return (
         <StyledExperience id="portofolio">
@@ -30,27 +37,22 @@ const Experience = () => {
             </div>
             {data && 
             <article>
-                <div className="nameCompany " > 
-                    {data.map((item:any,index:any) => {
+                <div className="nameCompany "  > 
+    
+                        <img id="0" src={POPtrade} 
+                            alt={POPtrade} 
+                            onClick={handleclick}
+                         />
+                        <img id="1" src={tecnoset} 
+                            alt={tecnoset} 
+                            onClick={handleclick}
+                         />
 
-                        const handleclick = (event:MouseEvent) => {
-                            event.preventDefault();
-                            setIndex(index)
-                            setIsHidden(false)
-                        }
-
-                            const pathImage = `http://localhost:3000/image/${item.companyImage}`
-                            // console.log(pathImage)
-                            console.log(isHidden)
-                 
-                            return (
-                                <img id={index} src={pathImage} 
-                                    alt={item.companyImage} 
-                                    key={item.id} 
-                                    onClick={handleclick}
-                                />
-                            )
-                    })}
+                        <img id="2" src={globalHitss} 
+                            alt={globalHitss}  
+                            onClick={handleclick}
+                         />
+           
                 </div>
                 {data[0] && isHidden === true &&
               <div className="borderExperience">

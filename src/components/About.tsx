@@ -1,34 +1,21 @@
 
 import { StyledAbout } from "./AboutStyled";
 import AlexImage from "../image/Alex.jpg"
-import { saveAs } from 'file-saver';
-import {useEffect,useState} from "react";
-import {FaDownload} from "react-icons/fa"
+import {FaDownload} from "react-icons/fa";
 
 
 const About = () => {
 
-  const [data, setData] = useState<any>([]);
-
-  useEffect(() => {
-
-    fetch("http://localhost:3000/image/AlexLogistica.pdf")
-    .then(response => response.arrayBuffer()) 
-    .then(setData)
-
-  },[])
-
+  
   const handleDownload = () => {
-
-    // Código para fazer o download do arquivo)
-    const file =  new Blob([data], { type: 'application/pdf' }); // o arquivo que você deseja baixar
-    saveAs(file, 'AlexLogistica.pdf'); //nome do arquivo que será salvo
-    // console.log(file);
-    // console.log(file.text())
-    // console.log(file.arrayBuffer())
-    // console.log(data)
+    // Aqui fica o codigo para o download do arquivo em PDF
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/u/0/uc?id=1HIGSWH_k1czOeUv04ypPSOxPf7v0eHcB&export=download';
+    link.setAttribute('download', 'AlexLogistica.pdf');
+    document.body.appendChild(link);
+    link.click();
+    console.log("Arquivo PDF foi baixado com sucesso!");
   }
-
 
     return (
       <StyledAbout id="sobre">

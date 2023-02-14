@@ -1,22 +1,14 @@
 import {StyledDashboard} from "./DashboardsStyled";
-import DataBase from "../data/Dashboards.json";
-import {useEffect ,useState ,MouseEvent,useRef} from "react";
-import {FaAngleLeft ,FaAngleRight} from "react-icons/fa"
-
+import {MouseEvent,useRef} from "react";
+import {FaAngleLeft ,FaAngleRight} from "react-icons/fa";
+import frota from "../videos/dashboardFrotas.mp4";
+import manutencao from "../videos/dashboardManutencao.mp4";
+import movimentacao from "../videos/dashboardMovimentacao.mp4";
 
 
 const Dashboards  = () => {
 
-    const [data, setData] = useState<any>([]);
     const carousel = useRef<any>(null);
-
-    useEffect(() => {
-
-        const videojson = DataBase
-        setData(videojson)
-      
-    },[])
-
     
       const handleLeftClick = (e:MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -28,13 +20,10 @@ const Dashboards  = () => {
         e.preventDefault();
         
         carousel.current.scrollLeft += carousel.current.offsetWidth;
-        console.log(carousel.current)
 
       };
 
-    if (!data || !data.length) return null;
-     
-      console.log(data)
+ 
 
     return (
         <StyledDashboard id="tecnologias">
@@ -45,19 +34,25 @@ const Dashboards  = () => {
             </div>
            
             <div className="slide" ref={carousel}>
-                {data.map((item:any,index:any) =>{
-                    const {id,nameDashboard,dashboardVideo} = item
-                    const pathVideos = `http://localhost:3000/videos/${dashboardVideo}`
-
-                    return(
-                        <div className="card"  key={id}>
-                            <p>{nameDashboard}</p>
-                              <video controls muted autoPlay loop id={`video-${index}`}>
-                                  <source src={ pathVideos }/>
-                              </video>
-                        </div>
-                    )
-                })} 
+             
+                 <div className="card" >
+                    <p>Controle de Frota e multas</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ frota }/>
+                        </video>
+                 </div>
+                 <div className="card" >
+                    <p>Controle de movimentações onboarding e offboarding</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ movimentacao }/>
+                        </video>
+                 </div>
+                 <div className="card" >
+                    <p>Controle de aparelhos em manutenção</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ manutencao }/>
+                        </video>
+                 </div>
             </div>
 
             <div className="buttons2">

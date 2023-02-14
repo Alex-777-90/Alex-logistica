@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { FaWhatsappSquare } from "react-icons/fa";
 
-
 const Footer = () => {
     return (
       <StyledFooter id="contato">
@@ -11,7 +10,7 @@ const Footer = () => {
                  <div className="contactInfos">
                         <p><strong>Nome:</strong> Alex Lima Souza dos Santos</p>
                         <p><strong>Endereço:</strong> São Paulo -SP</p>
-                        <p><strong>Telefone:</strong> <p>(11) 9 6647-1637</p></p>
+                        <p><strong>Telefone:</strong></p><p>(11) 9 6647-1637</p>
                         <p><strong>Email:</strong> 
                           alxnvn@yahoo.com.br</p>
                   </div>
