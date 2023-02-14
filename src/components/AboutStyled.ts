@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled ,{keyframes} from "styled-components";
+
+
+const animationButtonAbout = keyframes`
+    0% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        
+        transform: rotateZ(-10deg);
+    }
+`
 
 export const StyledAbout = styled.div`
     
@@ -82,6 +93,7 @@ export const StyledAbout = styled.div`
         background: linear-gradient(90deg,#0cafe0 0%,#bfe3ee 100%);
         color:#0b0377;
         font-weight: bold;
+        animation:${animationButtonAbout} 1s
      }
      .FaDownload{
        margin-right:10px;

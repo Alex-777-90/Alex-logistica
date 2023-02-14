@@ -49,6 +49,7 @@ border-radius:10px;
         display:flex;
         flex-direction:column;
         margin-left:-50px;
+    
     }
 
     .nameCompany img {
