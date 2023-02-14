@@ -4,7 +4,6 @@ export const StyledFooter = styled.footer`
     
     margin: 0 auto;
     max-width: 1320px;
-    /* background-color: rgb(0, 0, 139); */
     background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
     color: whitesmoke;
     border-radius:10px;
@@ -21,7 +20,6 @@ export const StyledFooter = styled.footer`
         border-bottom-width:0;
         border-left:0;
         border-right: 0;
-        /* background-color: rgb(0, 0, 139); */
         background: linear-gradient(90deg,#0999c5 0%,#044581 100%);
         border-top-left-radius:10px;
         border-top-right-radius:10px;

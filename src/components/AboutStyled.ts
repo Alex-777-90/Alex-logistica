@@ -31,9 +31,7 @@ export const StyledAbout = styled.div`
     .aboutImage{
         width: 370px;
         margin-top:-37px;
-        /* height: 400px; */
         background-color: rgba(5, 86, 153, 0);
-        /* background-color:red; */
         margin-left:50px;
         padding-left:50px;
         padding-top:30px;
@@ -51,7 +49,6 @@ export const StyledAbout = styled.div`
         width: 50%;
         padding: 10px;
         background-color: rgba(5, 86, 153, 0);
-        /* background-color:red; */
         padding-top:20px;
         margin-left:-70px;
         
@@ -102,7 +99,7 @@ export const StyledAbout = styled.div`
             padding-left:50px;
             padding-right:50px;
             margin-left:0px;
-            /* background-color:red; */
+         
         }
 
        .aboutImage{
@@ -113,7 +110,7 @@ export const StyledAbout = styled.div`
             padding-left:0px;
             padding-top:0px;
             padding-bottom:0px;
-            /* background-color:red; */
+          
         }
   
        .aboutImage img {
@@ -129,6 +126,12 @@ export const StyledAbout = styled.div`
             width: 100%;
             padding-left:20px;
             padding-right:20px;
+        }
+        .subTitle {
+            font-size:100%;
+        }
+        .aboutImage img {
+           width: 30%;
         }
      }
 

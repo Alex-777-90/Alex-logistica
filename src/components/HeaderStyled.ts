@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHeader= styled.header`
-  /* margin: 0 auto; */
-  /* max-width: 1320px; */
+
   display: flex;
   justify-content: space-between;
-  /* background-color: rgb(0, 0, 139); */
   background: linear-gradient(90deg,#0999c5 0%,#044581 100%);
   -webkit-box-shadow: 9px 19px 36px -16px rgba(0, 0, 0, 0.54);
         -moz-box-shadow: 9px 19px 36px -16px rgba(0, 0, 0, 0.54);
@@ -22,9 +20,12 @@ export const StyledHeader= styled.header`
   width: 100%;
   z-index: 999px;
 
- 
+ .name2{
+   display:none;
+ }
 
 .name h1{
+  font-size:170%;
   margin-left: 20px;
 }
 .links{
@@ -58,6 +59,16 @@ export const StyledHeader= styled.header`
   padding-left: 17px;
   font-size: 110%;
 
+}
+
+@media(max-width: 438px) {
+  .name2{
+     display:block;
+  }
+
+  .name1{
+    display:none;
+  }
 }
 
 `

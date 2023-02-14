@@ -45,7 +45,7 @@ padding-top:20px;
 button {
    cursor: pointer;
    font-size:217%;
-   color:blue;
+   color:whitesmoke;
    background-color: transparent;
    border:none;
    margin-top:30px;

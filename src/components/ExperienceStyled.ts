@@ -12,14 +12,13 @@ const animationTextExperience = keyframes`
 
 export const StyledExperience = styled.div`
 
-/* height:500px; */
+
 background-color: rgba(5, 86, 153, 0.774);
 border-radius:10px;
 
    .subTitle {
         margin-top: 40px; 
         text-align:center;
-        /* background-color: rgba(5, 86, 153, 0.774); */
         padding-top:20px;
         color: whitesmoke;
         font-size:120%;
@@ -29,8 +28,7 @@ border-radius:10px;
     }
 
     article {
-        /* background-color: rgba(5, 86, 153, 0.774); */
-        /* height:400px; */
+    
         width:100%;
         display:flex;
         justify-content: center;
@@ -42,8 +40,7 @@ border-radius:10px;
     }
     
     .nameCompany {
-        /* height:300px; */
-        /* background-color:lightgreen; */
+        
         width:20%;
         border-radius:10px;
         text-align:center;
@@ -71,7 +68,6 @@ border-radius:10px;
         margin-left:0px;
         width:100%;
         background-color: rgba(124, 175, 218, 0.774);
-        /* height:300px; */
         padding:20px;
         border-radius:10px;
         font-size:110%;
@@ -102,12 +98,11 @@ border-radius:10px;
     }
 
    .borderExperience{
-      /* border-color:rgba(124, 175, 218, 0.774); */
+
       border: 1px solid rgb(5, 126, 126);
       width:55%;
       border-radius:10px;
       box-shadow: -6px 6px 40px rgb(5, 126, 126) ;
-      margin-left:-20px;
       background-color:rgba(2, 131, 131, 0.301);
       
    }
@@ -127,11 +122,10 @@ border-radius:10px;
             flex-direction: row;
             align-items: center;
             justify-content:center;
-            /* padding:3px; */
             padding-left:7px;
             margin-left:0px;
             margin-top:10px;
-            /* background-color:red; */
+           
         }
 
         .nameCompany img {
@@ -142,7 +136,7 @@ border-radius:10px;
         .borderExperience{
             width:77%;
             margin-top:10px;
-            /* background-color:red; */
+          
         }
 
     }
