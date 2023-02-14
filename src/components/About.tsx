@@ -2,7 +2,7 @@
 import { StyledAbout } from "./AboutStyled";
 import AlexImage from "../image/Alex.jpg"
 import { saveAs } from 'file-saver';
-import React,{useEffect,useState} from "react";
+import {useEffect,useState} from "react";
 import {FaDownload} from "react-icons/fa"
 
 
@@ -31,12 +31,12 @@ const About = () => {
 
 
     return (
-      <StyledAbout>
+      <StyledAbout id="sobre">
          <div className='subTitle'>
              <h2>Sobre</h2>
          </div>
     
-           <article>
+           <article >
                 <div className='aboutImage'>
                         <img src={AlexImage} alt="imagem do Alex"/>
                 </div>

@@ -23,7 +23,7 @@ const Experience = () => {
     
 
     return (
-        <StyledExperience>
+        <StyledExperience id="portofolio">
             <div className='subTitle' >
                 <h2>Experiências</h2>
                 <p>Clique no logo da empresa para mais detalhes</p>
@@ -52,7 +52,7 @@ const Experience = () => {
                             )
                     })}
                 </div>
-                {data[0] && isHidden == true &&
+                {data[0] && isHidden === true &&
               <div className="borderExperience">
                     <div className="textExperience" id="standardClass" key={data[0].id} >
                             <h3>{data[0].company}</h3>
@@ -66,7 +66,7 @@ const Experience = () => {
                 </div>
                 
                 }
-                {index == 0 && 
+                {index === 0 && 
                 <div className="borderExperience">
                     <div className="textExperience" key={data[0].id} >
                         <h3>{data[0].company}</h3>
@@ -79,7 +79,7 @@ const Experience = () => {
                     </div>
                 </div>
                }
-               {index == 1 && 
+               {index === 1 && 
                <div className="borderExperience">
                     <div className="textExperience" key={data[1].id} >
                         <h3>{data[1].company}</h3>
@@ -92,7 +92,7 @@ const Experience = () => {
                     </div>
                 </div>
                }
-               {index == 2 && 
+               {index === 2 && 
                <div className="borderExperience">
                     <div className="textExperience" key={data[2].id} >
                         <h3>{data[2].company}</h3>

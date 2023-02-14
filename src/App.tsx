@@ -1,5 +1,7 @@
-import React from 'react';
+
 import './App.css';
+// router
+import { BrowserRouter } from "react-router-dom";
 
 // components
 import Header from "./components/Header";
@@ -11,6 +13,7 @@ import Dashboards from './components/Dashboards';
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Header/>
           <div className="container">
               <About/>
@@ -18,7 +21,9 @@ function App() {
               <Dashboards/>
           </div>
        <Footer/>
+       </BrowserRouter>
     </div>
+    
   );
 }
 

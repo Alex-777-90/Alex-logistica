@@ -1,6 +1,6 @@
 import {StyledDashboard} from "./DashboardsStyled";
 import DataBase from "../data/Dashboards.json";
-import {useEffect ,useState , FormEvent ,MouseEvent,useRef} from "react";
+import {useEffect ,useState ,MouseEvent,useRef} from "react";
 import {FaAngleLeft ,FaAngleRight} from "react-icons/fa"
 
 
@@ -37,7 +37,7 @@ const Dashboards  = () => {
       console.log(data)
 
     return (
-        <StyledDashboard>
+        <StyledDashboard id="tecnologias">
             <div className="buttons1" >
                 <button onClick={handleLeftClick} >
                     <FaAngleLeft/>
@@ -46,7 +46,7 @@ const Dashboards  = () => {
            
             <div className="slide" ref={carousel}>
                 {data.map((item:any,index:any) =>{
-                    const {id,nameDashboard,description,dashboardVideo} = item
+                    const {id,nameDashboard,dashboardVideo} = item
                     const pathVideos = `http://localhost:3000/videos/${dashboardVideo}`
 
                     return(
