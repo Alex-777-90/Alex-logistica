@@ -152,6 +152,9 @@ border-radius:10px;
             .borderExperience{
                 width:87%;
             }
+            .subTitle {
+                font-size:100%;
+            }
         }
 
         @media(max-width: 459px) {
