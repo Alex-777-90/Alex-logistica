@@ -2,7 +2,7 @@ import {StyledDashboard} from "./DashboardsStyled";
 import {MouseEvent,useRef} from "react";
 import {FaAngleLeft ,FaAngleRight} from "react-icons/fa";
 import frota from "../videos/dashboardFrotas.mp4";
-import manutencao from "../videos/dashboardManutencao.mp4";
+import manutencao from "../videos/dashboardManutencao3.mp4";
 import movimentacao from "../videos/dashboardMovimentacao.mp4";
 
 
