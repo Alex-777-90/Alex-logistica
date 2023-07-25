@@ -4,6 +4,8 @@ import {FaAngleLeft ,FaAngleRight} from "react-icons/fa";
 import frota from "../videos/dashboardFrotas1.mp4";
 import manutencao from "../videos/dashboardManutencao3.mp4";
 import movimentacao from "../videos/dashboardMovimentacao1.mp4";
+import financeiro from "../videos/dashboard_financeiro4.mp4";
+
 
 
 const Dashboards  = () => {
@@ -51,6 +53,12 @@ const Dashboards  = () => {
                     <p>Controle de aparelhos em manutenção</p>
                         <video controls muted autoPlay loop >
                             <source src={ manutencao }/>
+                        </video>
+                 </div>
+                 <div className="card" >
+                    <p>Controle de aparelhos em manutenção</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ financeiro }/>
                         </video>
                  </div>
             </div>
