@@ -57,13 +57,13 @@ const Dashboards  = () => {
                         </video>
                  </div>
                  <div className="card" >
-                    <p>Controle de aparelhos em manutenção</p>
+                    <p>Controle financeiro</p>
                         <video controls muted autoPlay loop >
                             <source src={ financeiro }/>
                         </video>
                  </div>
                  <div className="card" >
-                    <p>Controle de aparelhos em manutenção</p>
+                    <p>Controle de produção</p>
                         <video controls muted autoPlay loop >
                             <source src={ producao }/>
                         </video>
