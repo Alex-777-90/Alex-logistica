@@ -48,6 +48,7 @@ const RightNav: React.FC<MobileNavProps> = ({ open }) => {
     <Ul open = {open}>
         <a href="#sobre">Sobre</a>
         <a href="#portofolio">Experiência</a>
+        <a href="#certificate">Certificados</a>
         <a href="#tecnologias">Dashboards</a>
         <a href="#contato">Contato</a>
     </Ul>

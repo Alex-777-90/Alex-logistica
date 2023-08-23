@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import About from './components/About';
 import Experience from './components/Experience';
 import Dashboards from './components/Dashboards';
+import Certificate from "./components/Certificados";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <div className="container">
               <About/>
               <Experience/>
+              <Certificate/>
               <Dashboards/>
           </div>
        <Footer/>
