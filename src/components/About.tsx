@@ -10,7 +10,7 @@ const About = () => {
   const handleDownload = () => {
     // Aqui fica o codigo para o download do arquivo em PDF
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/u/0/uc?id=1HIGSWH_k1czOeUv04ypPSOxPf7v0eHcB&export=download';
+    link.href = 'https://drive.google.com/u/0/uc?id=1eJGb4eOylvrjKwSELP_WQlCoQoBv4qwV&export=download';
     link.setAttribute('download', 'AlexLogistica.pdf');
     document.body.appendChild(link);
     link.click();
