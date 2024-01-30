@@ -28,14 +28,14 @@ const About = () => {
                         <img src={AlexImage} alt="imagem do Alex"/>
                 </div>
                 <div className= "textAbout">
-                    <p>Olá, meu chamo <strong>Alex lima</strong> tenho uma longa experiência na área da logística</p>
+                    <p>Olá, meu chamo <strong>Alex lima</strong> tenho uma longa experiência na área da logística e administrativa</p>
                     <br />
-                    <p>Dentro da Logística já trabalhei em todo o fluxo da cadeia de suprimento desde do recebimento, 
+                    <p>Já trabalhei em todo o fluxo da cadeia de suprimento desde de compras , recebimento, 
                        contato com fornecedores, armazenagem, controle estoque, follow-up com transportadoras, 
                        rastreamento, contato com o cliente final e logística reversa.</p>
                     <br/>
-                    <p>Estou em busca de uma recolocação no mercado na área da Logística desde assistente, 
-                       analista de logística, transporte, almoxarifado.</p>
+                    <p>Estou em busca de uma recolocação no mercado na área da Logística ,administrativa desde assistente, 
+                       analista de logística, compras , transporte, almoxarifado.</p>
                     <br/>
                     <p><strong>Para baixar o meu currículo em PDF clique abaixo no botão :</strong></p>   
                     <button onClick={handleDownload} >
