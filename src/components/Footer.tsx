@@ -17,7 +17,7 @@ const Footer = () => {
                   <div className="whatsapp">
                       <p className="paragrafo">Clique Aqui</p>
                       <Link target="_blank" rel="noopener noreferrer" 
-                             to="https://api.whatsapp.com/send?phone=5511966471937">
+                             to="https://api.whatsapp.com/send?phone=5511966471637">
                             <p><FaWhatsappSquare/></p>
                       </Link>
                   </div>
