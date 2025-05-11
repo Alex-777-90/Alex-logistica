@@ -28,7 +28,7 @@ const About = () => {
                         <img src={AlexImage} alt="imagem do Alex"/>
                 </div>
                 <div className= "textAbout">
-                    <p>Olá, meu chamo <strong>Alex lima</strong> tenho uma longa experiência na área da logística e administrativa</p>
+                    <p>Olá, me chamo <strong>Alex lima</strong> tenho uma longa experiência na área da logística e administrativa</p>
                     <br />
                     <p>Já trabalhei em todo o fluxo da cadeia de suprimento desde de compras , recebimento, 
                        contato com fornecedores, armazenagem, controle estoque, follow-up com transportadoras, 
