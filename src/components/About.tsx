@@ -28,14 +28,16 @@ const About = () => {
                         <img src={AlexImage} alt="imagem do Alex"/>
                 </div>
                 <div className= "textAbout">
-                    <p>Olá, me chamo <strong>Alex lima</strong> tenho uma longa experiência na área da logística e administrativa</p>
-                    <br />
-                    <p>Já trabalhei em todo o fluxo da cadeia de suprimento desde de compras , recebimento, 
-                       contato com fornecedores, armazenagem, controle estoque, follow-up com transportadoras, 
-                       rastreamento, contato com o cliente final e logística reversa.</p>
+                    <p>Olá, me chamo <strong>Alex lima</strong> e atuo há mais de 11 anos na logística, com experiência em
+                    toda a cadeia de suprimentos — de compras e recebimento até estoque, transporte, atendimento final e logística reversa.</p>
                     <br/>
-                    <p>Estou em busca de uma recolocação no mercado na área da Logística ,administrativa desde assistente, 
-                       analista de logística, compras , transporte, almoxarifado.</p>
+                    <p>Tenho vivência prática em controle de notas fiscais, gestão de ativos, 
+                      follow-up com transportadoras, rastreabilidade e indicadores logísticos. 
+                      Domino Excel avançado, Power BI, SQL e Power Query, usando dados para apoiar decisões e melhorar processos.</p>
+                    <br/>
+                    <p>
+                      Busco uma nova oportunidade para aplicar minha visão estratégica, experiência de ponta a ponta e foco em eficiência.
+                    </p>
                     <br/>
                     <p><strong>Para baixar o meu currículo em PDF clique abaixo no botão :</strong></p>   
                     <button onClick={handleDownload} >
