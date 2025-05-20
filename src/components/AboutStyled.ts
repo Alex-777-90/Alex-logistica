@@ -53,7 +53,7 @@ export const StyledAbout = styled.div`
         border-radius: 300px;
         -webkit-box-shadow: 9px 19px 36px -16px rgba(0, 0, 0, 0.54);
         -moz-box-shadow: 9px 19px 36px -16px rgba(0, 0, 0, 0.54);
-        box-shadow: 9px 19px 36px -16px rgba(0, 0, 0, 0.54);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.95); /* sombra mais suave e forte */
     }
 
     .textAbout{

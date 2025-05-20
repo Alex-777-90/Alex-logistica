@@ -35,10 +35,6 @@ const About = () => {
                       follow-up com transportadoras, rastreabilidade e indicadores logísticos. 
                       Domino Excel avançado, Power BI, SQL e Power Query, usando dados para apoiar decisões e melhorar processos.</p>
                     <br/>
-                    <p>
-                      Busco uma nova oportunidade para aplicar minha visão estratégica, experiência de ponta a ponta e foco em eficiência.
-                    </p>
-                    <br/>
                     <p><strong>Para baixar o meu currículo em PDF clique abaixo no botão :</strong></p>   
                     <button onClick={handleDownload} >
                           <FaDownload className="FaDownload"/>  Download CV
