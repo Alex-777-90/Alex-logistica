@@ -4,8 +4,9 @@ import {FaAngleLeft ,FaAngleRight} from "react-icons/fa";
 import frota from "../videos/dashboardFrotas1.mp4";
 import manutencao from "../videos/dashboardManutencao3.mp4";
 import movimentacao from "../videos/dashboardMovimentacao1.mp4";
-import financeiro from "../videos/dashboard_financeiro4.mp4";
-import producao from "../videos/dashboard_producao3.mp4";
+import coleta from "../videos/coleta.mp4"
+import entregas from "../videos/entregas.mp4"
+import devolucao from "../videos/devolução.mp4"
 
 
 
@@ -44,6 +45,28 @@ const Dashboards  = () => {
                             <source src={ frota }/>
                         </video>
                  </div>
+
+                 <div className="card" >
+                    <p>Controle de Coleta</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ coleta }/>
+                        </video>
+                 </div>
+
+                 <div className="card" >
+                    <p>Controle de Entregas por transportadoras</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ entregas }/>
+                        </video>
+                 </div>
+
+                 <div className="card" >
+                    <p>Controle de Devolução por transportadora</p>
+                        <video controls muted autoPlay loop >
+                            <source src={ devolucao }/>
+                        </video>
+                 </div>
+
                  <div className="card" >
                     <p>Controle de movimentações onboarding e offboarding</p>
                         <video controls muted autoPlay loop >
@@ -56,18 +79,8 @@ const Dashboards  = () => {
                             <source src={ manutencao }/>
                         </video>
                  </div>
-                 <div className="card" >
-                    <p>Controle financeiro</p>
-                        <video controls muted autoPlay loop >
-                            <source src={ financeiro }/>
-                        </video>
-                 </div>
-                 <div className="card" >
-                    <p>Controle de produção</p>
-                        <video controls muted autoPlay loop >
-                            <source src={ producao }/>
-                        </video>
-                 </div>
+        
+   
             </div>
 
             <div className="buttons2">

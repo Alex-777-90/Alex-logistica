@@ -5,6 +5,9 @@ import diploma from "../videos/facul_certificado.jpg"
 import excel from "../videos/excel_certificado.jpg";
 import powerbi from "../videos/powerBI_certificado.jpg";
 import powerbi2 from "../videos/powerBI_certificado2.jpg";
+import sql from "../videos/sql_certificado.jpg"
+import sql2 from "../videos/sql_certificado2.jpg"
+
 
 const Certificate = () => {
   const carousel = useRef<any>(null);
@@ -37,6 +40,17 @@ const Certificate = () => {
                 <p>Certificado de conclusão curso Excel</p>
                 <img src={excel} alt="Certificado de conclusão curso Excel"/>
             </div>
+
+            <div className="card">
+                <p>Certficado curso de SQL</p>
+                <img src={sql} alt="Certficado curso de sql"/>
+            </div>
+
+            <div className="card">
+                <p>Certficado curso de ETL com Python e SQL</p>
+                <img src={sql2} alt="Certficado curso de sql"/>
+            </div>
+            
             <div className="card">
                 <p>Certficado curso power BI intensivo</p>
                 <img src={powerbi} alt="Certficado curso power BI intensivo"/>
