@@ -27,5 +27,15 @@
         "description":"Atuei diretamente no controle de estoque e inventário, com suporte à área de compras, realizando também o controle de pedidos, conferência de produtos e gestão de entrada e saída de mercadorias.Fui responsável pelo envio e rastreamento de mercadorias via Correios e transportadoras, assegurando a rastreabilidade e eficiência das entregas.Tive participação ativa na logística reversa de equipamentos com defeito ou obsoletos, garantindo a devolução e destinação correta dos itens.Essa atuação foi prestada como serviço à empresa Bayer, dentro de um ambiente corporativo com alto padrão de exigência.",
         "Skills":"Melhoria de processos · Controle de estoque· Gestão logística · Análise de dados · Microsoft Excel · Compras",
         "companyImage":"1QHaHi0XJvyOtGNKqyWnR3Zt1JiFLKk6o"
+    },
+
+    {
+        "id":4,
+        "company":"Kids Zone World",
+        "job":"Assistente de Logistica Reversa / Assistente de sistemas",
+        "time":"mai de 2024 - o momento",
+        "description":"Tive a oportunidade de criar o fluxo de processos da logística reversa desde planilha de Excel, criação de KPIs, Dashboard em Power BI, além de controlar o fluxo logístico da reversa.Atuei de forma incisiva no follow-up com transportadoras, cobrando o retorno ágil das mercadorias devolvidas ao CD. No centro de distribuição, também era responsável por acompanhar e cobrar o parceiro logístico sobre o recebimento, conferência e entrada correta dos produtos devolvidos no sistema, garantindo rastreabilidade e controle.Além disso, atuei na parte fiscal com entrada de notas de devolução e recusa.",
+        "Skills":"Analítica · Melhoria de processos · Interface de programação de aplicativos (API) · Desenvolvimento de software · Automação · Logística Reversa · Microsoft Power BI · Microsoft Power Query · Microsoft Excel · Python · VBA (Visual Basic for Applications) · JavaScript · Node.js · Microsoft SQL Server · ETL (Extração, transformação e carregamento)",
+        "companyImage":"1QHaHi0XJvyOtGNKqyWnR3Zt1JiFLKk6o"
     }
 ]

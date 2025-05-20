@@ -24,7 +24,7 @@ const Video = styled.video`
 export default function VideoPitch() {
   return (
     <VideoContainer>
-      <Title>Assista ao meu vídeo pitch</Title>
+      <Title>Assista ao meu vídeo pitch ("ative o audio")</Title>
       <Video controls autoPlay muted loop poster="/image/thumb-pitch.jpg">
         <source src="/logistica_legend.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo.

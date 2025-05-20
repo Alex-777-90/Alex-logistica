@@ -1,9 +1,12 @@
 import {StyledExperience} from "./ExperienceStyled";
 import DataBaseExperience from "../data/Experience.json";
 import {useEffect ,useState,MouseEvent} from "react";
+
 import POPtrade from "../image/pop-trade-marketing.png"
 import tecnoset from "../image/tecnoset.png"
 import globalHitss from "../image/globalhitss.jpg"
+import kidZoneWorld from "../image/kidsZone.png"
+
 
 
 const Experience = () => {
@@ -38,6 +41,11 @@ const Experience = () => {
             {data && 
             <article>
                 <div className="nameCompany "  > 
+
+                        <img id="3" src={kidZoneWorld} 
+                            alt={kidZoneWorld}  
+                            onClick={handleclick}
+                         />
     
                         <img id="0" src={POPtrade} 
                             alt={POPtrade} 
@@ -52,22 +60,36 @@ const Experience = () => {
                             alt={globalHitss}  
                             onClick={handleclick}
                          />
-           
+                       
                 </div>
-                {data[0] && isHidden === true &&
+                {data[3] && isHidden === true &&
               <div className="borderExperience">
-                    <div className="textExperience" id="standardClass" key={data[0].id} >
-                            <h3>{data[0].company}</h3>
-                            <p><strong>Cargo:</strong> {data[0].job}</p>
-                            <p><strong>Periodo:</strong> {data[0].time}</p>
+                    <div className="textExperience" id="standardClass" key={data[3].id} >
+                            <h3>{data[3].company}</h3>
+                            <p><strong>Cargo:</strong> {data[3].job}</p>
+                            <p><strong>Periodo:</strong> {data[3].time}</p>
                             <p><strong>Descrição:</strong></p>
-                            <p>{data[0].description}</p>
+                            <p>{data[3].description}</p>
                             <p><strong>Competências:</strong></p>
-                            <p className="tags">{data[0].Skills}</p>
+                            <p className="tags">{data[3].Skills}</p>
                     </div>
                 </div>
                 
                 }
+
+              {index === 3 && 
+               <div className="borderExperience">
+                    <div className="textExperience" key={data[3].id} >
+                        <h3>{data[3].company}</h3>
+                            <p><strong>Cargo:</strong> {data[3].job}</p>
+                            <p><strong>Periodo:</strong> {data[3].time}</p>
+                            <p><strong>Descrição:</strong></p>
+                            <p>{data[3].description}</p>
+                            <p><strong>Competências:</strong></p>
+                            <p className="tags">{data[3].Skills}</p>
+                    </div>
+                </div>
+               }  
                 {index === 0 && 
                 <div className="borderExperience">
                     <div className="textExperience" key={data[0].id} >
@@ -107,6 +129,7 @@ const Experience = () => {
                     </div>
                 </div>
                }
+
             </article>
             }
         </StyledExperience>
