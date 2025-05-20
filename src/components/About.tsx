@@ -8,14 +8,14 @@ const About = () => {
 
   
   const handleDownload = () => {
-    // Aqui fica o codigo para o download do arquivo em PDF
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/u/0/uc?id=1eJGb4eOylvrjKwSELP_WQlCoQoBv4qwV&export=download';
-    link.setAttribute('download', 'AlexLogistica.pdf');
+    link.href = '/Alex-Lima-Souza-dos-Santos -Logistica.pdf';
+    link.setAttribute('download', 'Alex-Lima-Souza-dos-Santos -Logistica.pdf');
     document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
     console.log("Arquivo PDF foi baixado com sucesso!");
-  }
+  };
 
     return (
       <StyledAbout id="sobre">
