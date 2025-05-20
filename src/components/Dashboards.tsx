@@ -7,10 +7,13 @@ import movimentacao from "../videos/dashboardMovimentacao1.mp4";
 import coleta from "../videos/coleta.mp4"
 import entregas from "../videos/entregas.mp4"
 import devolucao from "../videos/devolução.mp4"
+import { useTranslation } from "react-i18next";
 
 
 
 const Dashboards  = () => {
+
+    const { t } = useTranslation();
 
     const carousel = useRef<any>(null);
     
@@ -40,41 +43,42 @@ const Dashboards  = () => {
             <div className="slide" ref={carousel}>
              
                  <div className="card" >
-                    <p>Controle de Frota e multas</p>
+                        <p>{t("dashboard_frota")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ frota }/>
                         </video>
                  </div>
 
                  <div className="card" >
-                    <p>Controle de Coleta</p>
+                       <p>{t("dashboard_coleta")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ coleta }/>
                         </video>
                  </div>
 
                  <div className="card" >
-                    <p>Controle de Entregas por transportadoras</p>
+                       <p>{t("dashboard_entregas")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ entregas }/>
                         </video>
                  </div>
 
                  <div className="card" >
-                    <p>Controle de Devolução por transportadora</p>
+                       <p>{t("dashboard_devolucao")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ devolucao }/>
                         </video>
                  </div>
 
                  <div className="card" >
-                    <p>Controle de movimentações onboarding e offboarding</p>
+                       <p>{t("dashboard_movimentacao")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ movimentacao }/>
                         </video>
                  </div>
+                 
                  <div className="card" >
-                    <p>Controle de aparelhos em manutenção</p>
+                        <p>{t("dashboard_manutencao")}</p>
                         <video controls muted autoPlay loop >
                             <source src={ manutencao }/>
                         </video>

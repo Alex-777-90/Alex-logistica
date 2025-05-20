@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
 interface MobileNavProps extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean | null | undefined;
@@ -43,14 +44,14 @@ const Ul = styled.ul<MobileNavProps>`
 
 const RightNav: React.FC<MobileNavProps> = ({ open }) => {
  
-
+  const { t } = useTranslation();
   return (
     <Ul open = {open}>
-        <a href="#sobre">Sobre</a>
-        <a href="#portofolio">Experiência</a>
-        <a href="#certificate">Certificados</a>
-        <a href="#tecnologias">Dashboards</a>
-        <a href="#contato">Contato</a>
+       <a href="#sobre">{t("nav_about")}</a>
+       <a href="#portofolio">{t("nav_experience")}</a>
+       <a href="#certificate">{t("nav_certificates")}</a>
+       <a href="#tecnologias">{t("nav_dashboards")}</a>
+       <a href="#contato">{t("nav_contact")}</a>
     </Ul>
   )
 }

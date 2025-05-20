@@ -95,7 +95,9 @@ border-radius:10px;
     }
 
     .tags{
-        color:#8B0000
+        color:#8B0000;
+        font-family: 'Oswald', sans-serif;
+        font-weight:300;
     }
 
    .borderExperience{

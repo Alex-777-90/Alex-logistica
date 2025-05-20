@@ -2,10 +2,13 @@
 import { StyledAbout } from "./AboutStyled";
 import AlexImage from "../image/Alex.jpg"
 import {FaDownload} from "react-icons/fa";
+import { Trans, useTranslation } from 'react-i18next';
+
 
 
 const About = () => {
 
+  const { t } = useTranslation(); 
   
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -20,7 +23,7 @@ const About = () => {
     return (
       <StyledAbout id="sobre">
          <div className='subTitle'>
-             <h2>Sobre</h2>
+             <h2>{t("about_title")}</h2>
          </div>
     
            <article >
@@ -28,17 +31,14 @@ const About = () => {
                         <img src={AlexImage} alt="imagem do Alex"/>
                 </div>
                 <div className= "textAbout">
-                    <p>Olá, me chamo <strong>Alex lima</strong> e atuo há mais de 11 anos na logística, com experiência em
-                    toda a cadeia de suprimentos — de compras e recebimento até estoque, transporte, atendimento final e logística reversa.</p>
-                    <br/>
-                    <p>Tenho vivência prática em controle de notas fiscais, gestão de ativos, 
-                      follow-up com transportadoras, rastreabilidade e indicadores logísticos. 
-                      Domino Excel avançado, Power BI, SQL e Power Query, usando dados para apoiar decisões e melhorar processos.</p>
-                    <br/>
-                    <p><strong>Para baixar o meu currículo em PDF clique abaixo no botão :</strong></p>   
-                    <button onClick={handleDownload} >
-                          <FaDownload className="FaDownload"/>  Download CV
-                   </button>
+                <p><Trans i18nKey="about_intro1"><strong>Alex Lima</strong></Trans></p>
+          <br />
+          <p>{t("about_intro2")}</p>
+          <br />
+          <p><strong>{t("about_download_text")}</strong></p>
+          <button onClick={handleDownload}>
+            <FaDownload className="FaDownload" /> {t("download_cv")}
+          </button>
                 </div>
            </article>
       </StyledAbout>

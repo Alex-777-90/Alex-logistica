@@ -61,6 +61,13 @@ export const StyledHeader= styled.header`
 
 }
 
+img{
+  width: 5%;
+  margin-left:20px;
+  padding-top:5px;
+  cursor:pointer
+}
+
 @media(max-width: 438px) {
   .name2{
      display:block;
@@ -70,5 +77,7 @@ export const StyledHeader= styled.header`
     display:none;
   }
 }
+
+
 
 `

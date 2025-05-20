@@ -7,9 +7,13 @@ import powerbi from "../videos/powerBI_certificado.jpg";
 import powerbi2 from "../videos/powerBI_certificado2.jpg";
 import sql from "../videos/sql_certificado.jpg"
 import sql2 from "../videos/sql_certificado2.jpg"
+import { useTranslation } from "react-i18next";
 
 
 const Certificate = () => {
+
+  const { t } = useTranslation();
+
   const carousel = useRef<any>(null);
 
   const handleUpClick = (e: MouseEvent<HTMLButtonElement>) => {
@@ -33,30 +37,30 @@ const Certificate = () => {
          {/* Estilo para criar um carrossel vertical */}
          <div className="vertical-carousel">
             <div className="card">
-                <p>Diploma da faculdade curso logística</p>
+                <p>{t("cert_diploma")}</p>
                 <img src={diploma} alt="Diploma da faculdade curso logística"/>
             </div>
             <div className="card">
-                <p>Certificado de conclusão curso Excel</p>
+                <p>{t("cert_excel")}</p>
                 <img src={excel} alt="Certificado de conclusão curso Excel"/>
             </div>
 
             <div className="card">
-                <p>Certficado curso de SQL</p>
+                <p>{t("cert_sql")}</p>
                 <img src={sql} alt="Certficado curso de sql"/>
             </div>
 
             <div className="card">
-                <p>Certficado curso de ETL com Python e SQL</p>
+                <p>{t("cert_etl")}</p>
                 <img src={sql2} alt="Certficado curso de sql"/>
             </div>
             
             <div className="card">
-                <p>Certficado curso power BI intensivo</p>
+               <p>{t("cert_powerbi")}</p>
                 <img src={powerbi} alt="Certficado curso power BI intensivo"/>
             </div>
             <div className="card">
-                <p>Certficado curso power BI intensivo</p>
+                <p>{t("cert_powerbi")}</p>
                 <img src={powerbi2} alt="Certficado curso power BI intensivo"/>
             </div>
         </div>

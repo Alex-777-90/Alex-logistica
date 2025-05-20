@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "company": "Pop Trade Marketing",
+    "job": {
+      "pt": "Analista de logística",
+      "en": "Logistics Analyst"
+    },
+    "time": {
+      "pt": "set de 2021 - mai de 2022",
+      "en": "Sep 2021 - May 2022"
+    },
+    "description": {
+      "pt": "Atuei como responsável pela gestão completa dos ativos logísticos da empresa, incluindo controle de EPI’s, equipamentos corporativos e frota operacional. Utilizei ferramentas de análise de dados como Excel (com dashboards), Power BI, Power Query e MySQL para otimizar processos, monitorar indicadores e gerar insights estratégicos. Auxiliei o coordenador na gestão de uma equipe de 7 colaboradores, contribuindo na organização do fluxo diário de tarefas, acompanhamento da produtividade e no cumprimento das metas dentro dos prazos estabelecidos.Essa atuação combinou habilidades de gestão de pessoas, logística operacional e análise de dados, contribuindo diretamente para a eficiência e organização das operações logísticas da companhia.",
+      "en": "I was responsible for managing the company's logistics assets, including PPE, corporate equipment, and operational fleet. I used data analysis tools such as Excel (with dashboards), Power BI, Power Query, and MySQL to optimize processes, monitor KPIs, and generate strategic insights. I assisted the coordinator in managing a team of 7 people, organizing task flows, monitoring productivity, and achieving goals within deadlines."
+    },
+    "skills": {
+      "pt": [
+        "Gestão de equipes",
+        "Microsoft Power BI",
+        "Gestão logística",
+        "Análise de dados",
+        "Microsoft Excel"
+      ],
+      "en": [
+        "Team Management",
+        "Microsoft Power BI",
+        "Logistics Management",
+        "Data Analysis",
+        "Microsoft Excel"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "company": "Grupo Tecnoset",
+    "job": {
+      "pt": "Assistente de logística",
+      "en": "Logistics Assistant"
+    },
+    "time": {
+      "pt": "dez de 2019 - set de 2021",
+      "en": "Dec 2019 - Sep 2021"
+    },
+    "description": {
+      "pt": "Atuei com lançamento e conferência de notas fiscais de entrada e saída, além do controle de estoque utilizando o sistema Protheus e planilhas em Excel.Auxiliei o gestor na gestão de uma equipe de 14 colaboradores, colaborando diretamente na organização do cronograma de produção, embalagem e expedição.Fazia também o follow-up com transportadoras e clientes, garantindo a fluidez nas entregas e nos retornos.Tive participação ativa em todo o processo de logística reversa, apoiando na execução e no monitoramento das devoluções.",
+      "en": "I handled invoice entry and review for inbound and outbound goods, along with inventory control using Protheus and Excel spreadsheets. I supported a team of 14 in managing production, packing, and shipping schedules. I followed up with carriers and clients to ensure timely deliveries and returns, and actively participated in reverse logistics processes."
+    },
+    "skills": {
+      "pt": [
+        "Trabalho em equipe",
+        "Gestão de equipes",
+        "Melhoria de processos",
+        "Gestão logística",
+        "Microsoft Excel",
+        "ERP",
+        "TOTVS Protheus"
+      ],
+      "en": [
+        "Teamwork",
+        "Team Management",
+        "Process Improvement",
+        "Logistics Management",
+        "Microsoft Excel",
+        "ERP",
+        "TOTVS Protheus"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "company": "Global Hitss",
+    "job": {
+      "pt": "Analista de gestão de ativos",
+      "en": "Asset Management Analyst"
+    },
+    "time": {
+      "pt": "jun de 2016 - jun de 2018",
+      "en": "Jun 2016 - Jun 2018"
+    },
+    "description": {
+      "pt": "Atuei diretamente no controle de estoque e inventário, com suporte à área de compras, realizando também o controle de pedidos, conferência de produtos e gestão de entrada e saída de mercadorias.Fui responsável pelo envio e rastreamento de mercadorias via Correios e transportadoras, assegurando a rastreabilidade e eficiência das entregas.Tive participação ativa na logística reversa de equipamentos com defeito ou obsoletos, garantindo a devolução e destinação correta dos itens.Essa atuação foi prestada como serviço à empresa Bayer, dentro de um ambiente corporativo com alto padrão de exigência.",
+      "en": "I worked in inventory control and procurement support, handling orders, product inspection, and managing incoming/outgoing goods. I coordinated deliveries via postal and carrier services and was involved in reverse logistics for defective or obsolete equipment. This was a service provided to Bayer in a highly demanding corporate environment."
+    },
+    "skills": {
+      "pt": [
+        "Melhoria de processos",
+        "Controle de estoque",
+        "Gestão logística",
+        "Análise de dados",
+        "Microsoft Excel",
+        "Compras"
+      ],
+      "en": [
+        "Process Improvement",
+        "Inventory Control",
+        "Logistics Management",
+        "Data Analysis",
+        "Microsoft Excel",
+        "Purchasing"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "company": "Kids Zone World",
+    "job": {
+      "pt": "Assistente de Logistica Reversa / Assistente de sistemas",
+      "en": "Reverse Logistics Assistant / Systems Assistant"
+    },
+    "time": {
+      "pt": "mai de 2024 - o momento",
+      "en": "May 2024 - Present"
+    },
+    "description": {
+      "pt": "Tive a oportunidade de criar o fluxo de processos da logística reversa desde planilha de Excel, criação de KPIs, Dashboard em Power BI, além de controlar o fluxo logístico da reversa.Atuei de forma incisiva no follow-up com transportadoras, cobrando o retorno ágil das mercadorias devolvidas ao CD. No centro de distribuição, também era responsável por acompanhar e cobrar o parceiro logístico sobre o recebimento, conferência e entrada correta dos produtos devolvidos no sistema, garantindo rastreabilidade e controle.Além disso, atuei na parte fiscal com entrada de notas de devolução e recusa.",
+      "en": "I created the reverse logistics flow, including Excel planning, KPI setup, Power BI dashboards, and reverse logistics tracking. I followed up with carriers to ensure timely returns to the distribution center and ensured accurate receipt and system input of returned goods. I also handled fiscal activities such as issuing and entering return and refusal invoices."
+    },
+    "skills": {
+      "pt": [
+        "Analítica",
+        "Melhoria de processos",
+        "API",
+        "Desenvolvimento de software",
+        "Automação",
+        "Logística Reversa",
+        "Power BI",
+        "Power Query",
+        "Excel",
+        "Python",
+        "VBA",
+        "JavaScript",
+        "Node.js",
+        "SQL Server",
+        "ETL"
+      ],
+      "en": [
+        "Analytics",
+        "Process Improvement",
+        "API",
+        "Software Development",
+        "Automation",
+        "Reverse Logistics",
+        "Power BI",
+        "Power Query",
+        "Excel",
+        "Python",
+        "VBA",
+        "JavaScript",
+        "Node.js",
+        "SQL Server",
+        "ETL"
+      ]
+    }
+  }
+]

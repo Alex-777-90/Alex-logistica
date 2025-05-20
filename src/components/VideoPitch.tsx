@@ -1,5 +1,6 @@
 // src/components/VideoPitch.tsx
 import styled from "styled-components";
+import { useTranslation } from 'react-i18next';
 
 const VideoContainer = styled.div`
   background-color: rgba(5, 86, 153, 0.774);
@@ -22,9 +23,11 @@ const Video = styled.video`
 `;
 
 export default function VideoPitch() {
+  const { t } = useTranslation();
+
   return (
     <VideoContainer>
-      <Title>Assista ao meu vídeo pitch ("ative o audio")</Title>
+      <Title>{t("video_pitch_title")}</Title>
       <Video controls controlsList="nodownload" autoPlay muted loop poster="/image/thumb-pitch.jpg">
         <source src="/logistica_legend.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo.
