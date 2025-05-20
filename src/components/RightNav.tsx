@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface MobileNavProps extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean | null | undefined;

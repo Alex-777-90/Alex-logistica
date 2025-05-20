@@ -63,7 +63,7 @@ export const StyledHeader= styled.header`
 
 img{
   width: 5%;
-  margin-left:20px;
+  margin-left:10px;
   padding-top:5px;
   cursor:pointer
 }

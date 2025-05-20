@@ -16,10 +16,13 @@ const Header = () => {
     <StyledHeader>
            <div className="name">
                <h1 className="name1">Alex Lima 
+                  <img src={usa} alt="Inglês" onClick={() => changeLanguage("en")} />
+                  <img src={brasil} alt="Português" onClick={() => changeLanguage("pt")} />
+               </h1>
+               <h1 className="name2">Alex Lima
                 <img src={usa} alt="Inglês" onClick={() => changeLanguage("en")} />
                 <img src={brasil} alt="Português" onClick={() => changeLanguage("pt")} />
                </h1>
-               <h1 className="name2">Alex Lima</h1>
            </div>
            <Burger open={true || false} />
     </StyledHeader>

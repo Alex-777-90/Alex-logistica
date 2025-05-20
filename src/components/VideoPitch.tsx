@@ -14,6 +14,12 @@ const VideoContainer = styled.div`
 const Title = styled.h2`
   color: #fff;
   margin-bottom: 1rem;
+
+      @media(max-width: 590px) {
+            
+                font-size:95%;
+              
+        }
 `;
 
 const Video = styled.video`
