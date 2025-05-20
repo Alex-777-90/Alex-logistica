@@ -10,6 +10,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Dashboards from './components/Dashboards';
 import Certificate from "./components/Certificados";
+import VideoPitch from './components/VideoPitch';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Header/>
           <div className="container">
               <About/>
+              <VideoPitch/>
               <Experience/>
               <Certificate/>
               <Dashboards/>
