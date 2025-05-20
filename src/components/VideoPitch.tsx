@@ -34,7 +34,7 @@ export default function VideoPitch() {
   return (
     <VideoContainer>
       <Title>{t("video_pitch_title")}</Title>
-      <Video controls controlsList="nodownload" autoPlay muted loop poster="/image/thumb-pitch.jpg">
+      <Video controls controlsList="nodownload" autoPlay muted loop>
         <source src="/logistica_legend.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo.
       </Video>
