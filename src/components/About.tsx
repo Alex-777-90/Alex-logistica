@@ -1,6 +1,6 @@
 
 import { StyledAbout } from "./AboutStyled";
-import AlexImage from "../image/Alex.jpg"
+import AlexImage from "../image/Alex-remove.png"
 import {FaDownload} from "react-icons/fa";
 import { Trans, useTranslation } from 'react-i18next';
 
