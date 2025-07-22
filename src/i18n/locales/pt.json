@@ -11,6 +11,7 @@
     "dashboard_devolucao": "Controle de Devolução por transportadora",
     "dashboard_movimentacao": "Controle de movimentações onboarding e offboarding",
     "dashboard_manutencao": "Controle de aparelhos em manutenção",
+    "dashboard_Obs": " OBS: Os dados e valores apresentados não correspondem aos reais das empresas, sendo utilizados apenas para fins ilustrativos a fim de preservar a confidencialidade e a integridade das informações.",
     "footer_name": "Nome:",
     "footer_address": "Endereço:",
     "footer_phone": "Telefone:",

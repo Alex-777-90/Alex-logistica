@@ -33,6 +33,7 @@ const Dashboards  = () => {
  
 
     return (
+        <>
         <StyledDashboard id="tecnologias">
             <div className="buttons1" >
                 <button onClick={handleLeftClick} >
@@ -87,12 +88,21 @@ const Dashboards  = () => {
    
             </div>
 
+
             <div className="buttons2">
                 <button onClick={handleRightClick} >
                     <FaAngleRight/>
                 </button>
             </div>
+
+
+
         </StyledDashboard>
+        
+        <p className="disclaimer">
+           {t("dashboard_Obs")}
+        </p>
+        </>
     );
 }
 

@@ -9,3 +9,12 @@
   max-width: 1320px;
   
 }
+
+.disclaimer {
+  font-size: 107%;    /* aumenta a fonte */
+  font-weight: bold;
+  text-align: center;   /* centraliza */
+  margin-top: 20px;     /* espaço acima */
+
+
+}

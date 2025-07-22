@@ -11,6 +11,7 @@
     "dashboard_devolucao": "Returns Control by Carrier",
     "dashboard_movimentacao": "Onboarding and Offboarding Movements Control",
     "dashboard_manutencao": "Device Maintenance Control",
+    "dashboard_Obs":" Note: The data and values presented do not correspond to the actual figures of the companies, being used for illustrative purposes only in order to preserve the confidentiality and integrity of the information.",
     "footer_name": "Name:",
     "footer_address": "Address:",
     "footer_phone": "Phone:",

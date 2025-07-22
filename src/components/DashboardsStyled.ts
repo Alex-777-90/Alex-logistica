@@ -41,6 +41,14 @@ padding-top:20px;
   border-radius:10px;
 }
 
+.disclaimer {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
 
 button {
    cursor: pointer;
