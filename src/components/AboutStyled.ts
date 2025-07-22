@@ -77,6 +77,14 @@ export const StyledAbout = styled.div`
        
      }
 
+    .textAbout button {
+        margin-right: 10px; /* adiciona espaço de 10px entre os botões */
+    }
+
+    .textAbout button:last-child {
+        margin-right: 0; /* remove o espaço do último botão */
+    }
+
      button{
          background: linear-gradient(90deg,#0b0377 0%,#0cafe0 100%);
          padding:10px;

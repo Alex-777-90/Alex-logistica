@@ -20,6 +20,16 @@ const About = () => {
     console.log("Arquivo PDF foi baixado com sucesso!");
   };
 
+  const handleDownload2 = () => {
+    const link = document.createElement('a');
+    link.href = '/Case_de_sucesso-Alex_Lima_Souza_dos_Santos.pdf';
+    link.setAttribute('download', 'Case_de_sucesso-Alex_Lima_Souza_dos_Santos.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log("Arquivo PDF foi baixado com sucesso!");
+  };
+
     return (
       <StyledAbout id="sobre">
          <div className='subTitle'>
@@ -39,7 +49,10 @@ const About = () => {
           <button onClick={handleDownload}>
             <FaDownload className="FaDownload" /> {t("download_cv")}
           </button>
-                </div>
+            <button onClick={handleDownload2}>
+              <FaDownload className="FaDownload" /> {t("download_case")}
+            </button>
+          </div>
            </article>
       </StyledAbout>
     )
