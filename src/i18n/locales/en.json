@@ -22,6 +22,7 @@
     "cert_excel": "Excel course completion certificate",
     "cert_sql": "SQL course certificate",
     "cert_etl": "ETL with Python and SQL course certificate",
+    "cert_logInter": "Logistics Management: International Transport & Shipping certificate",
     "cert_powerbi": "Intensive Power BI course certificate",
     "experience_title": "Work Experience",
     "experience_hint": "Click on the company logo for more details",

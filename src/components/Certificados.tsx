@@ -5,9 +5,11 @@ import diploma from "../videos/facul_certificado.jpg"
 import excel from "../videos/excel_certificado.jpg";
 import powerbi from "../videos/powerBI_certificado.jpg";
 import powerbi2 from "../videos/powerBI_certificado2.jpg";
-import sql from "../videos/sql_certificado.jpg"
-import sql2 from "../videos/sql_certificado2.jpg"
+import sql from "../videos/sql_certificado.jpg";
+import sql2 from "../videos/sql_certificado2.jpg";
+import logInternational from "../videos/Curso-logistica-inter.jpg"
 import { useTranslation } from "react-i18next";
+
 
 
 const Certificate = () => {
@@ -40,6 +42,12 @@ const Certificate = () => {
                 <p>{t("cert_diploma")}</p>
                 <img src={diploma} alt="Diploma da faculdade curso logística"/>
             </div>
+
+            <div className="card">
+                <p>{t("cert_logInter")}</p>
+                <img src={logInternational} alt="Certficado curso de sql"/>
+            </div>
+
             <div className="card">
                 <p>{t("cert_excel")}</p>
                 <img src={excel} alt="Certificado de conclusão curso Excel"/>
